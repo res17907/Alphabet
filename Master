@@ -1,0 +1,8 @@
+#First program asks the end user for a letter
+c = input("Enter any letter do determine whether it is a consonant or a vowel")
+
+#if/else statement to determine if the letter is a vowel or not and send out a message letting the user know.
+if(c=='a')|(c=='e')|(c=='i')|(c=='o')|(c=='u'):
+	print("The letter",c,"is a vowel")
+else:
+	print("The letter",c,"is a consonant")
