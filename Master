@@ -1,8 +1,20 @@
 #First program asks the end user for a letter
+
 c = input("Enter any letter do determine whether it is a consonant or a vowel")
 
+#Users created a bug where if the end user uses a capital vowel (U) the program identifies this as a consonant instead of a vowel
+
+# u saves the end users input so the program will return the string with the capitalization of their input
+
+u = c
+
+# used c.lower() to allow convert the end users vowel to all lowercase to allow them to fit into my former if statement easier.
+
+c = c.lower()
+
 #if/else statement to determine if the letter is a vowel or not and send out a message letting the user know.
+
 if(c=='a')|(c=='e')|(c=='i')|(c=='o')|(c=='u'):
-	print("The letter",c,"is a vowel")
+	print("The letter",u,"is a vowel")
 else:
-	print("The letter",c,"is a consonant")
+	print("The letter",u,"is a consonant")
