@@ -1,6 +1,6 @@
 #First program asks the end user for a letter
 
-c = input("Enter any letter do determine whether it is a consonant or a vowel")
+c = input("Enter any letter do determine whether it is a consonant or a vowel: ")
 
 #Users created a bug where if the end user uses a capital vowel (U) the program identifies this as a consonant instead of a vowel
 
@@ -12,7 +12,26 @@ u = c
 
 c = c.lower()
 
-#if/else statement to determine if the letter is a vowel or not and send out a message letting the user know.
+#Created a new feature where if the string entered by the end user is greater than 1 the program will reject it and ask for a one letter entry
+
+d = len(c)
+
+if (d > 1):
+    
+#loop to allow the end user to re enter if more than one character is detected
+    
+    while(d>1):
+        print("Please only enter one character at a time")
+        c = input("Enter any letter: ")
+        u = c
+        c = c.lower()
+        d = len(c)
+        continue
+#Re-enter above info to allow the program to move forward
+	
+	
+
+#if/else statement if the original entry is a 1 digit string to determine if the letter is a vowel or not and send out a message letting the user know.
 
 if(c=='a')|(c=='e')|(c=='i')|(c=='o')|(c=='u'):
 	print("The letter",u,"is a vowel")
